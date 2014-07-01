@@ -1,0 +1,20 @@
+<section data-ng-controller="IndexController">
+    <h1 mean-token="'home-default'">All blogs</h1>
+</section>
+<section data-ng-controller="IndexController">
+    <div ng-repeat="blog in blogArray">
+
+        <h2><a ng-click="passTittleToBlog(blog.author, blog.title)">{{ blog.title }}</a></h2>
+        <a  ng-click="passAuthorId(blog.author)">{{blog.author}}</a>
+
+        <p>{{blog.date}}</p>
+    </div>
+
+    <form>
+        <h1>Creat new blog</h1>
+        Name:<input ng-model="blogPost.author" type="text"/>
+        Blog Title:<input ng-model="blogPost.title" type="text"/>
+        Blog body:<textarea ng-model="blogPost.body" rows="10" cols="10"></textarea>
+        <input type="submit" value="Post" ng-click="postBlog()">
+    </form>
+</section>

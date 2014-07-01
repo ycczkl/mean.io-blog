@@ -1,0 +1,513 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'hexo' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose cache add [ 'hexo', null ]
+5 verbose cache add name=undefined spec="hexo" args=["hexo",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'hexo',
+6 verbose parsed url   path: 'hexo',
+6 verbose parsed url   href: 'hexo' }
+7 silly lockFile 3f1a2efe-hexo hexo
+8 verbose lock hexo /Users/LIU/.npm/3f1a2efe-hexo.lock
+9 silly lockFile 3f1a2efe-hexo hexo
+10 silly lockFile 3f1a2efe-hexo hexo
+11 verbose addNamed [ 'hexo', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c225e5a0-hexo hexo@
+14 verbose lock hexo@ /Users/LIU/.npm/c225e5a0-hexo.lock
+15 silly addNameRange { name: 'hexo', range: '*', hasData: false }
+16 verbose url raw hexo
+17 verbose url resolving [ 'https://registry.npmjs.org/', './hexo' ]
+18 verbose url resolved https://registry.npmjs.org/hexo
+19 info trying registry request attempt 1 at 14:28:31
+20 http GET https://registry.npmjs.org/hexo
+21 http 200 https://registry.npmjs.org/hexo
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Sat, 28 Jun 2014 18:28:32 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"BWCA3C5S77QQF54ZXEYJ343O7"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=30',
+22 silly registry.get     'content-length': '124722',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '1268',
+22 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1403980112.375606,VS0,VE90',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'hexo', range: '*', hasData: true }
+24 silly addNameRange versions [ 'hexo',
+24 silly addNameRange   [ '0.0.1',
+24 silly addNameRange     '0.0.2',
+24 silly addNameRange     '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.1.7',
+24 silly addNameRange     '0.1.8',
+24 silly addNameRange     '0.1.9',
+24 silly addNameRange     '0.1.10',
+24 silly addNameRange     '0.1.11',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.3.1',
+24 silly addNameRange     '0.3.2',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.4.2',
+24 silly addNameRange     '0.4.3',
+24 silly addNameRange     '0.4.4',
+24 silly addNameRange     '0.4.5',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.5.1',
+24 silly addNameRange     '0.5.2',
+24 silly addNameRange     '0.5.3',
+24 silly addNameRange     '0.5.4',
+24 silly addNameRange     '0.5.5',
+24 silly addNameRange     '0.5.6',
+24 silly addNameRange     '0.5.7',
+24 silly addNameRange     '0.5.8',
+24 silly addNameRange     '0.5.9',
+24 silly addNameRange     '0.5.10',
+24 silly addNameRange     '0.5.11',
+24 silly addNameRange     '0.5.12',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.0.3',
+24 silly addNameRange     '1.0.4',
+24 silly addNameRange     '1.0.5',
+24 silly addNameRange     '1.0.6',
+24 silly addNameRange     '1.0.7',
+24 silly addNameRange     '1.0.8',
+24 silly addNameRange     '1.0.9',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.1.2',
+24 silly addNameRange     '1.1.3',
+24 silly addNameRange     '1.1.4',
+24 silly addNameRange     '1.2.0',
+24 silly addNameRange     '1.2.1',
+24 silly addNameRange     '1.2.2',
+24 silly addNameRange     '1.2.3',
+24 silly addNameRange     '1.2.4',
+24 silly addNameRange     '2.0.0-beta2',
+24 silly addNameRange     '2.0.0-rc1',
+24 silly addNameRange     '2.0.0-rc2',
+24 silly addNameRange     '2.0.0-beta1',
+24 silly addNameRange     '2.0.0-rc3',
+24 silly addNameRange     '2.0.0',
+24 silly addNameRange     '2.0.1',
+24 silly addNameRange     '2.0.2',
+24 silly addNameRange     '2.0.3',
+24 silly addNameRange     '2.0.4',
+24 silly addNameRange     '2.0.5',
+24 silly addNameRange     '2.0.6',
+24 silly addNameRange     '2.0.7',
+24 silly addNameRange     '2.1.0',
+24 silly addNameRange     '2.1.1',
+24 silly addNameRange     '2.2.0',
+24 silly addNameRange     '2.2.1',
+24 silly addNameRange     '2.3.0',
+24 silly addNameRange     '2.4.0',
+24 silly addNameRange     '2.4.1',
+24 silly addNameRange     '2.4.2',
+24 silly addNameRange     '2.4.3',
+24 silly addNameRange     '2.4.4',
+24 silly addNameRange     '2.4.5',
+24 silly addNameRange     '2.5.1',
+24 silly addNameRange     '2.5.2',
+24 silly addNameRange     '2.5.3',
+24 silly addNameRange     '2.5.4',
+24 silly addNameRange     '2.5.5',
+24 silly addNameRange     '2.5.6',
+24 silly addNameRange     '2.5.7',
+24 silly addNameRange     '2.6.0',
+24 silly addNameRange     '2.6.1',
+24 silly addNameRange     '2.6.2',
+24 silly addNameRange     '2.6.3',
+24 silly addNameRange     '2.7.0',
+24 silly addNameRange     '2.7.1' ] ]
+25 verbose addNamed [ 'hexo', '2.7.1' ]
+26 verbose addNamed [ '2.7.1', '2.7.1' ]
+27 silly lockFile 0d26845a-hexo-2-7-1 hexo@2.7.1
+28 verbose lock hexo@2.7.1 /Users/LIU/.npm/0d26845a-hexo-2-7-1.lock
+29 silly lockFile ff7f00d0-ry-npmjs-org-hexo-hexo-2-7-1-tgz https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz
+30 verbose lock https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz /Users/LIU/.npm/ff7f00d0-ry-npmjs-org-hexo-hexo-2-7-1-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz',
+31 verbose addRemoteTarball   '026657eaf5cbe750da5ed3033505f053fecbcc5f' ]
+32 info retry fetch attempt 1 at 14:28:32
+33 verbose fetch to= /var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz
+34 http GET https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz
+35 http 200 https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz
+36 verbose tar unpack /var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz
+37 silly lockFile 10a2affe-Users-LIU-npm-hexo-2-7-1-package tar:///Users/LIU/.npm/hexo/2.7.1/package
+38 verbose lock tar:///Users/LIU/.npm/hexo/2.7.1/package /Users/LIU/.npm/10a2affe-Users-LIU-npm-hexo-2-7-1-package.lock
+39 silly lockFile eabdcf49-2681-0-17289517051540315-tmp-tgz tar:///var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz
+40 verbose lock tar:///var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz /Users/LIU/.npm/eabdcf49-2681-0-17289517051540315-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry LICENSE
+46 silly gunzTarPerm extractEntry gulpfile.js
+47 silly gunzTarPerm extractEntry .travis.yml
+48 silly gunzTarPerm extractEntry Makefile
+49 silly gunzTarPerm extractEntry .jshintrc
+50 silly gunzTarPerm extractEntry assets/package.json
+51 silly gunzTarPerm extractEntry assets/_config.yml
+52 silly gunzTarPerm extractEntry assets/gitignore
+53 silly gunzTarPerm extractEntry assets/scaffolds/draft.md
+54 silly gunzTarPerm extractEntry assets/scaffolds/page.md
+55 silly gunzTarPerm extractEntry assets/scaffolds/photo.md
+56 silly gunzTarPerm extractEntry assets/scaffolds/post.md
+57 silly gunzTarPerm extractEntry assets/source/_posts/hello-world.md
+58 silly gunzTarPerm extractEntry assets/themes/landscape/package.json
+59 silly gunzTarPerm extractEntry assets/themes/landscape/.npmignore
+60 silly gunzTarPerm extractEntry assets/themes/landscape/README.md
+61 silly gunzTarPerm extractEntry assets/themes/landscape/LICENSE
+62 silly gunzTarPerm extractEntry assets/themes/landscape/Gruntfile.js
+63 silly gunzTarPerm extractEntry assets/themes/landscape/_config.yml
+64 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/google-analytics.ejs
+65 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/after-footer.ejs
+66 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/archive.ejs
+67 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/article.ejs
+68 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/footer.ejs
+69 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/archive-post.ejs
+70 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/head.ejs
+71 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/header.ejs
+72 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/mobile-nav.ejs
+73 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/category.ejs
+74 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/date.ejs
+75 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/gallery.ejs
+76 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/nav.ejs
+77 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/tag.ejs
+78 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/post/title.ejs
+79 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_partial/sidebar.ejs
+80 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_widget/archive.ejs
+81 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_widget/category.ejs
+82 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_widget/recent_posts.ejs
+83 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_widget/tag.ejs
+84 silly gunzTarPerm extractEntry assets/themes/landscape/layout/_widget/tagcloud.ejs
+85 silly gunzTarPerm extractEntry assets/themes/landscape/layout/archive.ejs
+86 silly gunzTarPerm extractEntry assets/themes/landscape/layout/category.ejs
+87 silly gunzTarPerm extractEntry assets/themes/landscape/layout/index.ejs
+88 silly gunzTarPerm extractEntry assets/themes/landscape/layout/layout.ejs
+89 silly gunzTarPerm extractEntry assets/themes/landscape/layout/page.ejs
+90 silly gunzTarPerm extractEntry assets/themes/landscape/layout/post.ejs
+91 silly gunzTarPerm extractEntry assets/themes/landscape/layout/tag.ejs
+92 silly gunzTarPerm extractEntry assets/themes/landscape/scripts/fancybox.js
+93 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_extend.styl
+94 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/archive.styl
+95 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/article.styl
+96 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/comment.styl
+97 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/footer.styl
+98 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/header.styl
+99 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/highlight.styl
+100 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/mobile.styl
+101 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/sidebar-aside.styl
+102 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/sidebar-bottom.styl
+103 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_partial/sidebar.styl
+104 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_util/grid.styl
+105 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_util/mixin.styl
+106 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/_variables.styl
+107 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/fonts/FontAwesome.otf
+108 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/fonts/fontawesome-webfont.eot
+109 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/fonts/fontawesome-webfont.svg
+110 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/fonts/fontawesome-webfont.ttf
+111 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/fonts/fontawesome-webfont.woff
+112 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/images/banner.jpg
+113 silly gunzTarPerm extractEntry assets/themes/landscape/source/css/style.styl
+114 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/jquery.fancybox.js
+115 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/jquery.fancybox.pack.js
+116 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/blank.gif
+117 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/fancybox_loading.gif
+118 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/fancybox_loading@2x.gif
+119 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/fancybox_overlay.png
+120 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/fancybox_sprite.png
+121 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/fancybox_sprite@2x.png
+122 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.js
+123 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/jquery.fancybox-media.js
+124 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.js
+125 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/fancybox_buttons.png
+126 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.css
+127 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.css
+128 silly gunzTarPerm extractEntry assets/themes/landscape/source/fancybox/jquery.fancybox.css
+129 silly gunzTarPerm extractEntry assets/themes/landscape/source/js/script.js
+130 silly gunzTarPerm extractEntry bin/hexo
+131 silly gunzTarPerm extractEntry lib/hexo.js
+132 silly gunzTarPerm extractEntry lib/init.js
+133 silly gunzTarPerm extractEntry lib/loaders/config.js
+134 silly gunzTarPerm extractEntry lib/loaders/database.js
+135 silly gunzTarPerm extractEntry lib/loaders/extend.js
+136 silly gunzTarPerm extractEntry lib/loaders/logger.js
+137 silly gunzTarPerm extractEntry lib/loaders/plugins.js
+138 silly gunzTarPerm extractEntry lib/loaders/scripts.js
+139 silly gunzTarPerm extractEntry lib/loaders/update.js
+140 silly gunzTarPerm extractEntry lib/extend/console.js
+141 silly gunzTarPerm extractEntry lib/extend/deployer.js
+142 silly gunzTarPerm extractEntry lib/extend/filter.js
+143 silly gunzTarPerm extractEntry lib/extend/generator.js
+144 silly gunzTarPerm extractEntry lib/extend/helper.js
+145 silly gunzTarPerm extractEntry lib/extend/index.js
+146 silly gunzTarPerm extractEntry lib/extend/migrator.js
+147 silly gunzTarPerm extractEntry lib/extend/processor.js
+148 silly gunzTarPerm extractEntry lib/extend/renderer.js
+149 silly gunzTarPerm extractEntry lib/extend/tag.js
+150 silly gunzTarPerm extractEntry lib/box/file.js
+151 silly gunzTarPerm extractEntry lib/box/index.js
+152 silly gunzTarPerm extractEntry lib/box/pattern.js
+153 silly gunzTarPerm extractEntry lib/error/extend.js
+154 silly gunzTarPerm extractEntry lib/error/index.js
+155 silly gunzTarPerm extractEntry lib/core/i18n.js
+156 silly gunzTarPerm extractEntry lib/core/index.js
+157 silly gunzTarPerm extractEntry lib/core/locals.js
+158 silly gunzTarPerm extractEntry lib/core/render.js
+159 silly gunzTarPerm extractEntry lib/core/router.js
+160 silly gunzTarPerm extractEntry lib/core/scaffold.js
+161 silly gunzTarPerm extractEntry lib/core/source.js
+162 silly gunzTarPerm extractEntry lib/logger/console.js
+163 silly gunzTarPerm extractEntry lib/logger/file.js
+164 silly gunzTarPerm extractEntry lib/logger/index.js
+165 silly gunzTarPerm extractEntry lib/logger/stream.js
+166 silly gunzTarPerm extractEntry lib/model/asset.js
+167 silly gunzTarPerm extractEntry lib/model/cache.js
+168 silly gunzTarPerm extractEntry lib/model/category.js
+169 silly gunzTarPerm extractEntry lib/model/index.js
+170 silly gunzTarPerm extractEntry lib/model/post.js
+171 silly gunzTarPerm extractEntry lib/model/post_asset.js
+172 silly gunzTarPerm extractEntry lib/model/schema.js
+173 silly gunzTarPerm extractEntry lib/model/tag.js
+174 silly gunzTarPerm extractEntry lib/model/hooks/category.js
+175 silly gunzTarPerm extractEntry lib/model/hooks/post.js
+176 silly gunzTarPerm extractEntry lib/model/hooks/tag.js
+177 silly gunzTarPerm extractEntry lib/model/types/moment.js
+178 silly gunzTarPerm extractEntry lib/plugins/console/clean.js
+179 silly gunzTarPerm extractEntry lib/plugins/console/server.js
+180 silly gunzTarPerm extractEntry lib/plugins/console/help.js
+181 silly gunzTarPerm extractEntry lib/plugins/console/index.js
+182 silly gunzTarPerm extractEntry lib/plugins/console/deploy.js
+183 silly gunzTarPerm extractEntry lib/plugins/console/config.js
+184 silly gunzTarPerm extractEntry lib/plugins/console/migrate.js
+185 silly gunzTarPerm extractEntry lib/plugins/console/new.js
+186 silly gunzTarPerm extractEntry lib/plugins/console/publish.js
+187 silly gunzTarPerm extractEntry lib/plugins/console/render.js
+188 silly gunzTarPerm extractEntry lib/plugins/console/init.js
+189 silly gunzTarPerm extractEntry lib/plugins/console/version.js
+190 silly gunzTarPerm extractEntry lib/plugins/console/generate/index.js
+191 silly gunzTarPerm extractEntry lib/plugins/console/generate/worker.js
+192 silly gunzTarPerm extractEntry lib/plugins/console/list/index.js
+193 silly gunzTarPerm extractEntry lib/plugins/console/list/route.js
+194 silly gunzTarPerm extractEntry lib/plugins/deployer/git.js
+195 silly gunzTarPerm extractEntry lib/plugins/deployer/github.js
+196 silly gunzTarPerm extractEntry lib/plugins/deployer/index.js
+197 silly gunzTarPerm extractEntry lib/plugins/deployer/openshift.js
+198 silly gunzTarPerm extractEntry lib/plugins/deployer/rsync.js
+199 silly gunzTarPerm extractEntry lib/plugins/deployer/util.js
+200 silly gunzTarPerm extractEntry lib/plugins/deployer/heroku/app.js
+201 silly gunzTarPerm extractEntry lib/plugins/deployer/heroku/index.js
+202 silly gunzTarPerm extractEntry lib/plugins/deployer/heroku/Procfile
+203 silly gunzTarPerm extractEntry lib/plugins/filter/auto_spacing.js
+204 silly gunzTarPerm extractEntry lib/plugins/filter/backtick_code_block.js
+205 silly gunzTarPerm extractEntry lib/plugins/filter/excerpt.js
+206 silly gunzTarPerm extractEntry lib/plugins/filter/external_link.js
+207 silly gunzTarPerm extractEntry lib/plugins/filter/index.js
+208 silly gunzTarPerm extractEntry lib/plugins/filter/new_post_path.js
+209 silly gunzTarPerm extractEntry lib/plugins/filter/post_permalink.js
+210 silly gunzTarPerm extractEntry lib/plugins/filter/titlecase.js
+211 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/gzip.js
+212 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/header.js
+213 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/logger.js
+214 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/redirect.js
+215 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/route.js
+216 silly gunzTarPerm extractEntry lib/plugins/filter/middlewares/static.js
+217 silly gunzTarPerm extractEntry lib/plugins/generator/archive.js
+218 silly gunzTarPerm extractEntry lib/plugins/generator/asset.js
+219 silly gunzTarPerm extractEntry lib/plugins/generator/category.js
+220 silly gunzTarPerm extractEntry lib/plugins/generator/home.js
+221 silly gunzTarPerm extractEntry lib/plugins/generator/index.js
+222 silly gunzTarPerm extractEntry lib/plugins/generator/page.js
+223 silly gunzTarPerm extractEntry lib/plugins/generator/paginator.js
+224 silly gunzTarPerm extractEntry lib/plugins/generator/post.js
+225 silly gunzTarPerm extractEntry lib/plugins/generator/tag.js
+226 silly gunzTarPerm extractEntry lib/plugins/helper/date.js
+227 silly gunzTarPerm extractEntry lib/plugins/helper/index.js
+228 silly gunzTarPerm extractEntry lib/plugins/helper/is.js
+229 silly gunzTarPerm extractEntry lib/plugins/helper/list.js
+230 silly gunzTarPerm extractEntry lib/plugins/helper/gravatar.js
+231 silly gunzTarPerm extractEntry lib/plugins/helper/number.js
+232 silly gunzTarPerm extractEntry lib/plugins/helper/open_graph.js
+233 silly gunzTarPerm extractEntry lib/plugins/helper/paginator.js
+234 silly gunzTarPerm extractEntry lib/plugins/helper/partial.js
+235 silly gunzTarPerm extractEntry lib/plugins/helper/tag.js
+236 silly gunzTarPerm extractEntry lib/plugins/helper/fragment_cache.js
+237 silly gunzTarPerm extractEntry lib/plugins/helper/tagcloud.js
+238 silly gunzTarPerm extractEntry lib/plugins/helper/format.js
+239 silly gunzTarPerm extractEntry lib/plugins/helper/toc.js
+240 silly gunzTarPerm extractEntry lib/plugins/helper/form.js
+241 silly gunzTarPerm extractEntry lib/plugins/helper/url.js
+242 silly gunzTarPerm extractEntry lib/plugins/helper/list_post.js
+243 silly gunzTarPerm extractEntry lib/plugins/processor/asset.js
+244 silly gunzTarPerm extractEntry lib/plugins/processor/index.js
+245 silly gunzTarPerm extractEntry lib/plugins/processor/page.js
+246 silly gunzTarPerm extractEntry lib/plugins/processor/post.js
+247 silly gunzTarPerm extractEntry lib/plugins/renderer/html.js
+248 silly gunzTarPerm extractEntry lib/plugins/renderer/index.js
+249 silly gunzTarPerm extractEntry lib/plugins/renderer/swig.js
+250 silly gunzTarPerm extractEntry lib/plugins/renderer/yaml.js
+251 silly gunzTarPerm extractEntry lib/plugins/tag/blockquote.js
+252 silly gunzTarPerm extractEntry lib/plugins/tag/iframe.js
+253 silly gunzTarPerm extractEntry lib/plugins/tag/img.js
+254 silly gunzTarPerm extractEntry lib/plugins/tag/include_code.js
+255 silly gunzTarPerm extractEntry lib/plugins/tag/gist.js
+256 silly gunzTarPerm extractEntry lib/plugins/tag/jsfiddle.js
+257 silly gunzTarPerm extractEntry lib/plugins/tag/link.js
+258 silly gunzTarPerm extractEntry lib/plugins/tag/pullquote.js
+259 silly gunzTarPerm extractEntry lib/plugins/tag/raw.js
+260 silly gunzTarPerm extractEntry lib/plugins/tag/vimeo.js
+261 silly gunzTarPerm extractEntry lib/plugins/tag/code.js
+262 silly gunzTarPerm extractEntry lib/plugins/tag/youtube.js
+263 silly gunzTarPerm extractEntry lib/plugins/tag/index.js
+264 silly gunzTarPerm extractEntry lib/post/create.js
+265 silly gunzTarPerm extractEntry lib/post/index.js
+266 silly gunzTarPerm extractEntry lib/post/load.js
+267 silly gunzTarPerm extractEntry lib/post/render.js
+268 silly gunzTarPerm extractEntry lib/theme/index.js
+269 silly gunzTarPerm extractEntry lib/theme/view.js
+270 silly gunzTarPerm extractEntry lib/theme/processors/config.js
+271 silly gunzTarPerm extractEntry lib/theme/processors/i18n.js
+272 silly gunzTarPerm extractEntry lib/theme/processors/source.js
+273 silly gunzTarPerm extractEntry lib/theme/processors/view.js
+274 silly gunzTarPerm extractEntry lib/util/escape.js
+275 silly gunzTarPerm extractEntry lib/util/file2.js
+276 silly gunzTarPerm extractEntry lib/util/format.js
+277 silly gunzTarPerm extractEntry lib/util/highlight.js
+278 silly gunzTarPerm extractEntry lib/util/file.js
+279 silly gunzTarPerm extractEntry lib/util/index.js
+280 silly gunzTarPerm extractEntry lib/util/inflector.js
+281 silly gunzTarPerm extractEntry lib/util/pool.js
+282 silly gunzTarPerm extractEntry lib/util/server.js
+283 silly gunzTarPerm extractEntry lib/util/spawn.js
+284 silly gunzTarPerm extractEntry lib/util/exec.js
+285 silly gunzTarPerm extractEntry lib/util/yfm.js
+286 silly gunzTarPerm extractEntry lib/util/html_tag.js
+287 silly gunzTarPerm extractEntry .gitmodules
+288 silly lockFile 10a2affe-Users-LIU-npm-hexo-2-7-1-package tar:///Users/LIU/.npm/hexo/2.7.1/package
+289 silly lockFile 10a2affe-Users-LIU-npm-hexo-2-7-1-package tar:///Users/LIU/.npm/hexo/2.7.1/package
+290 silly lockFile eabdcf49-2681-0-17289517051540315-tmp-tgz tar:///var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz
+291 silly lockFile eabdcf49-2681-0-17289517051540315-tmp-tgz tar:///var/folders/hq/q7yp8khd13d8z6172c0cd_940000gn/T/npm-74489-9PC4B1xw/1403980112681-0.17289517051540315/tmp.tgz
+292 silly lockFile ff7f00d0-ry-npmjs-org-hexo-hexo-2-7-1-tgz https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz
+293 silly lockFile ff7f00d0-ry-npmjs-org-hexo-hexo-2-7-1-tgz https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz
+294 silly lockFile 0d26845a-hexo-2-7-1 hexo@2.7.1
+295 silly lockFile 0d26845a-hexo-2-7-1 hexo@2.7.1
+296 silly lockFile c225e5a0-hexo hexo@
+297 silly lockFile c225e5a0-hexo hexo@
+298 silly resolved [ { name: 'hexo',
+298 silly resolved     version: '2.7.1',
+298 silly resolved     description: 'A fast, simple & powerful blog framework, powered by Node.js.',
+298 silly resolved     main: 'lib/hexo',
+298 silly resolved     bin: { hexo: './bin/hexo' },
+298 silly resolved     scripts: { test: 'gulp test' },
+298 silly resolved     directories: { lib: './lib', bin: './bin' },
+298 silly resolved     engines: { node: '>= 0.10.0' },
+298 silly resolved     repository: { type: 'git', url: 'git://github.com/tommy351/hexo.git' },
+298 silly resolved     bugs: { url: 'https://github.com/tommy351/hexo/issues' },
+298 silly resolved     homepage: 'http://hexo.io/',
+298 silly resolved     keywords: [ 'website', 'blog', 'cms', 'framework', 'hexo' ],
+298 silly resolved     author:
+298 silly resolved      { name: 'Tommy Chen',
+298 silly resolved        email: 'tommy351@gmail.com',
+298 silly resolved        url: 'http://zespia.tw' },
+298 silly resolved     license: 'MIT',
+298 silly resolved     dependencies:
+298 silly resolved      { async: '^0.9.0',
+298 silly resolved        moment: '^2.7.0',
+298 silly resolved        colors: '0.6.2',
+298 silly resolved        'highlight.js': '8.0.0',
+298 silly resolved        yamljs: '0.1.4',
+298 silly resolved        lodash: '^2.4.1',
+298 silly resolved        swig: '1.3.2',
+298 silly resolved        'graceful-fs': '^3.0.2',
+298 silly resolved        warehouse: '0.1.14',
+298 silly resolved        'sprintf-js': '0.0.7',
+298 silly resolved        chokidar: '0.8.2',
+298 silly resolved        minimist: '0.1.0',
+298 silly resolved        pangunode: '0.0.6',
+298 silly resolved        cheerio: '0.17.0',
+298 silly resolved        connect: '3.x',
+298 silly resolved        'serve-static': '^1.2.0',
+298 silly resolved        morgan: '^1.1.1',
+298 silly resolved        compression: '^1.0.3',
+298 silly resolved        mime: '^1.2.11' },
+298 silly resolved     devDependencies:
+298 silly resolved      { mocha: '^1.18.2',
+298 silly resolved        chai: '^1.9.1',
+298 silly resolved        gulp: '^3.6.2',
+298 silly resolved        'gulp-jshint': '^1.5.5',
+298 silly resolved        'gulp-mocha': '^0.4.1',
+298 silly resolved        'jshint-stylish': '^0.1.5' },
+298 silly resolved     readme: '# Hexo\n\n[![Build Status](https://travis-ci.org/tommy351/hexo.svg?branch=master)](https://travis-ci.org/tommy351/hexo)  [![NPM version](https://badge.fury.io/js/hexo.svg)](http://badge.fury.io/js/hexo)\n\n[![Clone in Koding](http://learn.koding.com/btn/clone_d.png)][koding]\n[koding]: https://koding.com/Teamwork?import=https://github.com/tommy351/hexo/archive/master.zip&c=git3\n\nA fast, simple & powerful blog framework, powered by [Node.js](http://nodejs.org).\n\n## Features\n\n- Blazing fast generating\n- Support for GitHub Flavored Markdown and most Octopress plugins\n- One-command deploy to GitHub Pages, Heroku, etc.\n- Powerful plugin system\n\n## Installation\n\n``` bash\n$ npm install hexo -g\n```\n\n## Quick Start\n\n**Setup your blog**\n\n``` bash\n$ hexo init blog\n$ cd blog\n$ npm install\n```\n\n**Start the server**\n\n``` bash\n$ hexo server\n```\n\n**Create a new post**\n\n``` bash\n$ hexo new "Hello Hexo"\n```\n\n**Generate static files**\n\n``` bash\n$ hexo generate\n```\n\n## More Information\n\n- Read the [documentation](http://hexo.io/)\n- Find solutions in [troubleshooting](http://hexo.io/docs/troubleshooting.html)\n- Join discussion on [Google Group](https://groups.google.com/group/hexo)\n- See the [plugin list](https://github.com/tommy351/hexo/wiki/Plugins) and the [theme list](https://github.com/tommy351/hexo/wiki/Themes) on wiki\n- Follow [@hexojs](https://twitter.com/hexojs) for latest news\n\n## License\n\nMIT',
+298 silly resolved     readmeFilename: 'README.md',
+298 silly resolved     _id: 'hexo@2.7.1',
+298 silly resolved     _shasum: '026657eaf5cbe750da5ed3033505f053fecbcc5f',
+298 silly resolved     _from: 'hexo@',
+298 silly resolved     _resolved: 'https://registry.npmjs.org/hexo/-/hexo-2.7.1.tgz' } ]
+299 info install hexo@2.7.1 into /usr/local/lib
+300 info installOne hexo@2.7.1
+301 info /usr/local/lib/node_modules/hexo unbuild
+302 verbose tar unpack /Users/LIU/.npm/hexo/2.7.1/package.tgz
+303 silly lockFile 9bdfa400--usr-local-lib-node-modules-hexo tar:///usr/local/lib/node_modules/hexo
+304 verbose lock tar:///usr/local/lib/node_modules/hexo /Users/LIU/.npm/9bdfa400--usr-local-lib-node-modules-hexo.lock
+305 silly lockFile dba7a29f-s-LIU-npm-hexo-2-7-1-package-tgz tar:///Users/LIU/.npm/hexo/2.7.1/package.tgz
+306 verbose lock tar:///Users/LIU/.npm/hexo/2.7.1/package.tgz /Users/LIU/.npm/dba7a29f-s-LIU-npm-hexo-2-7-1-package-tgz.lock
+307 silly gunzTarPerm modes [ '755', '644' ]
+308 error Error: EACCES, mkdir '/usr/local/lib/node_modules/hexo'
+308 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/hexo']
+308 error   errno: 3,
+308 error   code: 'EACCES',
+308 error   path: '/usr/local/lib/node_modules/hexo',
+308 error   fstream_type: 'Directory',
+308 error   fstream_path: '/usr/local/lib/node_modules/hexo',
+308 error   fstream_class: 'DirWriter',
+308 error   fstream_stack:
+308 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+308 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+308 error      'Object.oncomplete (fs.js:107:15)' ] }
+309 error Please try running this command again as root/Administrator.
+310 error System Darwin 13.2.0
+311 error command "node" "/usr/local/bin/npm" "install" "-g" "hexo"
+312 error cwd /Users/LIU/kelun_dropbox/Dropbox/Web/mean/mean-blog/blog
+313 error node -v v0.10.28
+314 error npm -v 1.4.9
+315 error path /usr/local/lib/node_modules/hexo
+316 error fstream_path /usr/local/lib/node_modules/hexo
+317 error fstream_type Directory
+318 error fstream_class DirWriter
+319 error code EACCES
+320 error errno 3
+321 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/hexo'
+322 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+322 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+322 error fstream_stack Object.oncomplete (fs.js:107:15)
+323 verbose exit [ 3, true ]
