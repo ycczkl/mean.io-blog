@@ -15,9 +15,9 @@ angular.module('mean.system').controller('IndexController', ['$scope','$statePar
         $location.path('/bloglist/' + author_id);
     };
 
-    $scope.passTittleToBlog = function(tittle) {
-        console.log(tittle);
-        $location.path('/blog/' + tittle +'/' + 3);
+    $scope.passTittleToBlog = function(author, tittle) {
+        console.log(author, tittle);
+        $location.path('/blog/' + author +'/' + tittle);
     };
 
     blogService.returnAll().allblogs()

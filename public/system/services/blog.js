@@ -93,6 +93,13 @@ angular.module('mean.system').factory('blogService', function ($http, $resource)
                     method: 'GET',
                     params: {author_id: author_id}
                 });
+            },
+            getblog: function(author_id, blog_id) {
+                return $http({
+                    url: '/bloglist/:author_id/:blog_id',
+                    method: 'GET',
+                    params: {author_id: author_id, blog_id: blog_id}
+                });
             }
         };
         return service;

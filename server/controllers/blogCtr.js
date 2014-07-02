@@ -53,3 +53,14 @@ exports.getbloglist = function(req, res) {
     });
 };
 
+exports.getbody = function(req, res) {
+   // console.log(req.query);
+    var author_id = req.query.author_id,
+        blog_id = req.query.blog_id;
+    Blog.find({'author': author_id, 'title': blog_id}, '', function(err, blog){
+        if(err) throw err;
+        res.send(200, {
+            blogArr: blog
+        });
+    });
+};

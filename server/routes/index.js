@@ -12,4 +12,6 @@ module.exports = function(app) {
     app.post('/blog', blog.getpost);
 
     app.get('/bloglist/:author_id', blog.getbloglist);
+
+    app.get('/bloglist/:author_id/:blog_id', blog.getbody);
 };
