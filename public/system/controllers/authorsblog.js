@@ -1,19 +1,17 @@
 'use strict';
-angular.module('mean.system').controller('AuthorController', ['$scope', '$stateParams', 'blogService', function ($scope, $stateParams , blogService) {
+/*This controlor is use in bloglist page
+* use fet method to get all blogs of one author
+* use $stateParams to pass the params*/
+angular.module('mean.system').controller('AuthorController', ['$scope', '$stateParams', 'NewBlogService', function ($scope, $stateParams, NewBlogService) {
     $scope.titles = [];
-//    $scope.Authorarray = blogService.returnAuthorOne();
-    //console.log($stateParams);
-    blogService.getbloglist($stateParams.authorId)
-        .success(function(data){
-            console.log(data.titleArr);
-            $scope.listauthor = data.titleArr[0].author;
-            for(var i = 0; i < data.titleArr.length; i++){
-                $scope.titles.push(data.titleArr[i].title);
-            }
-            console.log($scope.titles);
-            //$scope.Authorarray.push(data);
-            //console.log($scope.blogArray);
-        });
+    NewBlogService.get({author_id : $stateParams.authorId}, function (data) {
+        //console.log(data);
+        $scope.listauthor = data.titleArr[0].author;
+        for (var i = 0; i < data.titleArr.length; i++) {
+            $scope.titles.push(data.titleArr[i].title);
+        }
+        console.log($scope.titles);
+    });
 
 }]);
 

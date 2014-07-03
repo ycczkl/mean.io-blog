@@ -1,43 +1,44 @@
 'use strict';
-
-angular.module('mean.system').controller('IndexController', ['$scope','$stateParams','$location', 'Global','blogService', function ($scope, $stateParams,$location, Global, blogService) {
+/* IndexController for index.html page
+ * 1.Get all blog data from back end
+ * 2.Post blog and send the data to back end
+ */
+angular.module('mean.system').controller('IndexController', ['$scope', '$stateParams', '$location', 'Global', 'NewBlogService', function ($scope, $stateParams, $location, Global, NewBlogService) {
     $scope.global = Global;
-//    $scope.blogArray = blogService.returnAll();
 
-
-
-//    $scope.postBlog = function(){
-//        blogService.getPostBlog($scope.blogPost.title, $scope.blogPost.author, $scope.blogPost.body);
-//    };
-
-    $scope.passAuthorId = function(author_id) {
-        console.log(author_id);
+    //When this function called then directed to the bloglist page
+    $scope.passAuthorId = function (author_id) {
         $location.path('/bloglist/' + author_id);
     };
 
-    $scope.passTittleToBlog = function(author, tittle) {
-        console.log(author, tittle);
-        $location.path('/blog/' + author +'/' + tittle);
+    //When this function called then directed to the blog page
+    $scope.passTittleToBlog = function (author, tittle) {
+        $location.path('/blog/' + author + '/' + tittle);
     };
 
-    blogService.returnAll().allblogs()
-        .$promise.then(function(data) {
-            console.log(data);
-            $scope.blogArray = data.theData;
-        });
-    $scope.postBlog = function() {
+    /* 1.NewBlogService used $resource which defined in service/blog.js
+    *  2.Use get method to get the all blog data*/
+    NewBlogService.get(function (data) {
+        $scope.blogArray = data.theData;
+    });
+
+    /*Post the blog*/
+    $scope.postBlog = function () {
         var insertData = {
             'title': $scope.blogPost.title,
             'author': $scope.blogPost.author,
             'body': $scope.blogPost.body,
             'date': Date()
         };
-        blogService.getPostBlog($scope.blogPost.title, $scope.blogPost.author, $scope.blogPost.body, insertData.date)
-            .success(function(data){
-                console.log(data);
-                $scope.blogArray.push(insertData);
-                console.log($scope.blogArray);
-            });
+        var postService = new NewBlogService(insertData);
+        console.log(postService);
+        postService.$save(function (res) {
+            $scope.blogArray.push(insertData);
+
+            $scope.blogPost.title = '';
+            $scope.blogPost.author = '';
+            $scope.blogPost.body = '';
+        });
     };
 
 }]);

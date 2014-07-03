@@ -4,21 +4,10 @@
 'use strict';
 
 var mongoose = require('mongoose');
+var Blog = mongoose.model('test');
 
-//    Schema = mongoose.Schema({
-//        name: String
-//    }),
-//    collectionName = 'testblogdata';
-//    mongoose.model('test', schema, collectionName);
-    var Blog = mongoose.model('test');
-//var m = new Blog;
-//m.name = 'zkl';
-//var thedata;
 
 exports.testdb = function(req, res) {
-//    var m = new Blog;
-//    m.name = 'zkl';
-//    m.save(function(){console.log('insert')});
     var thedata;
     Blog.find({}, function(err, doc){
         thedata = doc;
@@ -43,8 +32,8 @@ exports.getpost = function(req, res) {
 };
 
 exports.getbloglist = function(req, res) {
-    console.log(req.query.author_id);
-    var author_id = req.query.author_id;
+    //console.log(req);
+    var author_id = req.params.author_id;
     Blog.find({'author': author_id}, 'title author', function(err, title){
         if(err) throw err;
         res.send(200, {
@@ -54,9 +43,8 @@ exports.getbloglist = function(req, res) {
 };
 
 exports.getbody = function(req, res) {
-   // console.log(req.query);
-    var author_id = req.query.author_id,
-        blog_id = req.query.blog_id;
+    var author_id = req.params.author_id,
+        blog_id = req.params.blog_id;
     Blog.find({'author': author_id, 'title': blog_id}, '', function(err, blog){
         if(err) throw err;
         res.send(200, {

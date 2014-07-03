@@ -1,6 +1,6 @@
 <div ng-controller="AuthorController">
     <h1>Author Name:{{listauthor}}</h1>
-    <div ng-repeat="title in titles">
+    <div ng-repeat="title in titles track by $id(title)">
         <a ui-sref= "theBlog({author_Id: '{{listauthor}}', blog_id: '{{title}}'})">{{title}}<br/></a>
     </div>
 </div>
